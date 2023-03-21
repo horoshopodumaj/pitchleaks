@@ -2051,6 +2051,10 @@ body {
 	text-align: center;
 	margin-bottom: 8px;
 	margin-right: 8px;
+	max-width: 282px;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	white-space: nowrap;
 
 	&__trend {
 		background: #fbe7c7;
