@@ -230,7 +230,13 @@ const Pitches: FC = (props: Props) => {
 
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-	const windowsWidth = useWindowSize().width;
+	const windowsWidth: number = useWindowSize().width;
+
+	const [domLoaded, setDomLoaded] = useState<boolean>(false);
+
+	useEffect(() => {
+		setDomLoaded(true);
+	}, []);
 
 	useEffect(() => {
 		const lastIndex = pitches.length - 1;
@@ -266,10 +272,12 @@ const Pitches: FC = (props: Props) => {
 										<div className='video__image'>
 											<Image
 												className=''
-												width={windowsWidth >= 576 ? 429 : 301}
-												height={windowsWidth >= 576 ? 700 : 541}
+												width={domLoaded && windowsWidth >= 576 ? 429 : 301}
+												height={
+													domLoaded && windowsWidth >= 576 ? 700 : 541
+												}
 												src={
-													windowsWidth >= 576
+													domLoaded && windowsWidth >= 576
 														? pitch.imageMd
 														: pitch.imageSm
 												}

@@ -34,9 +34,9 @@ const investors: IPhilanthropistType[] = [
 ];
 
 const Investors = (props: Props) => {
-	const windowsWidth = useWindowSize().width;
+	const windowsWidth: number = useWindowSize().width;
 
-	const [domLoaded, setDomLoaded] = useState(false);
+	const [domLoaded, setDomLoaded] = useState<boolean>(false);
 
 	useEffect(() => {
 		setDomLoaded(true);
