@@ -10,7 +10,7 @@ import useMounted from '../../hooks/useMounted';
 import Mounted from '../../components/Mounted';
 import useRoot from '../../hooks/useRoot';
 import { WrapperContainer } from '../Wrapper/Wrapper';
-import Logo from '../../assets/images/logo.svg';
+import Logo from '../../assets/images/logo-protect.svg';
 import LogoSm from '../../assets/images/logo-sm.svg';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -139,9 +139,9 @@ const Header: FC<IHeaderProps> = ({ children, hasLeftMobileMenu, hasRightMobileM
 								<Link href='#home'>
 									<Image
 										className='full-header__img header-mobile__img-md'
-										width={windowsWidth >= 610 ? 203 : 160}
-										height={windowsWidth >= 610 ? 77 : 66}
-										src={windowsWidth >= 610 ? Logo : LogoSm}
+										width={windowsWidth >= 610 ? 253 : 200}
+										height={windowsWidth >= 610 ? 100 : 80}
+										src={Logo}
 										alt={'logo'}
 									/>
 								</Link>

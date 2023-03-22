@@ -6,7 +6,7 @@ import ThemeContext from '../../../context/themeContext';
 import useDarkMode from '../../../hooks/useDarkMode';
 import useMounted from '../../../hooks/useMounted';
 import { useRouter } from 'next/router';
-import Logo from '../../../assets/images/logo.svg';
+import Logo from '../../../assets/images/logo-protect.svg';
 import Image from 'next/image';
 import { useWindowSize } from 'react-use';
 import Link from 'next/link';
@@ -53,8 +53,8 @@ const CommonHeaderRight: FC<ICommonHeaderRightProps> = ({ beforeChildren, afterC
 						className='full-header__img'
 						src={Logo}
 						alt='logo'
-						width={203}
-						height={77}
+						width={253}
+						height={100}
 					/>
 				</Link>
 			</div>

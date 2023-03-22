@@ -3364,6 +3364,13 @@
     "react-overlays" "^5.2.0"
     "uncontrollable" "^7.2.1"
 
+"react-clamp-lines@^3.0.3":
+  "integrity" "sha512-NTPPieGp11XGxXbI0mH1mcLtdvOFUk/aDL5En3VcHUTtctILnUVNcPsB7Fe+EoL8E+mds2NIeED9JYpwJslZjQ=="
+  "resolved" "https://registry.npmjs.org/react-clamp-lines/-/react-clamp-lines-3.0.3.tgz"
+  "version" "3.0.3"
+  dependencies:
+    "prop-types" "^15.7.2"
+
 "react-content-loader@^6.2.1":
   "integrity" "sha512-6ONbFX+Hi3SHuP66JB8CPvJn372pj+qwltJV0J8z/8MFrq98I1cbFdZuhDWeQXu3CFxiiDTXJn7DFxx2ZvrO7g=="
   "resolved" "https://registry.npmjs.org/react-content-loader/-/react-content-loader-6.2.1.tgz"

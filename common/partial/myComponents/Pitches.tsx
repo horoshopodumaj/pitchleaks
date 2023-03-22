@@ -9,6 +9,7 @@ import Button from '../../../components/bootstrap/Button';
 import Pitch from '../../../assets/images/pitch2.jpg';
 import PitchSm from '../../../assets/images/pitch1-sm.jpg';
 import Modal, { ModalBody, ModalHeader, ModalTitle } from '../../../components/bootstrap/Modal';
+import ClampLines from 'react-clamp-lines';
 
 type Props = {};
 
@@ -34,7 +35,7 @@ const pitches: PitchesType[] = [
 		imageSm: PitchSm,
 		title: 'Nuro',
 		desc: `Nuro — беспилотный автомобиль, поможет улучшить повседневную жизнь
-    миллионов людей, обеспечивболее безопасные улицы, более здоровую
+    миллионов людей, обеспечив более безопасные улицы, более здоровую
     планету и более справедливый доступ к товарам, и в то же время
     вернуть людям время, которое они могут потратить на то,
     что действительно важно. Встречайте наш автономный автомобиль
@@ -99,7 +100,7 @@ const pitches: PitchesType[] = [
 		imageSm: PitchSm,
 		title: 'Nuro 2',
 		desc: `Nuro — беспилотный автомобиль, поможет улучшить повседневную жизнь
-    миллионов людей, обеспечивболее безопасные улицы, более здоровую
+    миллионов людей, обеспечив более безопасные улицы, более здоровую
     планету и более справедливый доступ к товарам, и в то же время
     вернуть людям время, которое они могут потратить на то,
     что действительно важно. Встречайте наш автономный автомобиль
@@ -164,7 +165,7 @@ const pitches: PitchesType[] = [
 		imageSm: PitchSm,
 		title: 'Nuro 3',
 		desc: `Nuro — беспилотный автомобиль, поможет улучшить повседневную жизнь
-    миллионов людей, обеспечивболее безопасные улицы, более здоровую
+    миллионов людей, обеспечив более безопасные улицы, более здоровую
     планету и более справедливый доступ к товарам, и в то же время
     вернуть людям время, которое они могут потратить на то,
     что действительно важно. Встречайте наш автономный автомобиль
@@ -311,6 +312,16 @@ const Pitches: FC = (props: Props) => {
 								<Card className='pitches-card'>
 									<CardBody className='pitches-card__body'>
 										<h3 className='pitches-card__title'>{pitch.title}</h3>
+										{/* <ClampLines
+											text={pitch.desc}
+											id='really-unique-id'
+											lines={4}
+											ellipsis='...'
+											moreText='Expand'
+											lessText='Collapse'
+											className='pitches-card__desc'
+											innerElement='p'
+										/> */}
 										<p className='pitches-card__desc'>{pitch.desc}</p>
 										<div className='pitches-card__trends'>
 											<h5 className='pitches-card__subtitle'>
@@ -374,77 +385,3 @@ const Pitches: FC = (props: Props) => {
 };
 
 export default Pitches;
-
-{
-	/* <div className='pitches__content '>
-					<Card className='pitches__video video'>
-						<CardBody className='video__body'>
-							<div className='video__image'>
-								<Image
-									className=''
-									width={windowsWidth >= 576 ? 429 : 301}
-									height={windowsWidth >= 576 ? 700 : 541}
-									src={windowsWidth >= 576 ? Pitch : PitchSm}
-									alt={'pitch'}
-								/>
-							</div>
-
-							<Button
-								className='video__play'
-								icon={'PlayIcon'}
-								onClick={() => setModalState(true)}></Button>
-							<div className='video__group'>
-								<Button className='video__reject' icon={'RejectIcon'}></Button>
-								<Button className='video__approve' icon={'ApproveIcon'}></Button>
-							</div>
-						</CardBody>
-					</Card>
-					<Button className='pitches__btn'>Посмотреть все питчи</Button>
-				</div>
-				<div className='pitches__info '>
-					<Card className='pitches-card'>
-						<CardBody className='pitches-card__body'>
-							<h3 className='pitches-card__title'>Nuro</h3>
-							<p className='pitches-card__desc'>
-								Nuro — беспилотный автомобиль, поможет улучшить повседневную жизнь
-								миллионов людей, обеспечивболее безопасные улицы, более здоровую
-								планету и более справедливый доступ к товарам, и в то же время
-								вернуть людям время, которое они могут потратить на то,
-								что действительно важно. Встречайте наш автономный автомобиль
-								третьего поколения.
-							</p>
-							<div className='pitches-card__trends'>
-								<h5 className='pitches-card__subtitle'>
-									Технологические направления:
-								</h5>
-								<div className='pitches-card__tags'>
-									<p className='tag tag__trend'>3D printing</p>
-									<p className='tag tag__trend'>Adtech</p>
-
-									<p className='tag tag__trend'>Advanced manufacturing</p>
-
-									<p className='tag tag__trend'>tag4</p>
-
-									<p className='tag tag__trend'>
-										Artificial intelligence and machine learning (AI/ML)
-									</p>
-
-									<p className='tag tag__trend'>tag6</p>
-								</div>
-							</div>
-							<div className='pitches-card__technologies'>
-								<h5 className='pitches-card__subtitle'>Технологии:</h5>
-								<div className='pitches-card__tags'>
-									<p className=' tag tag__tech'>3D printing</p>
-									<p className='tag tag__tech'>AI/ML</p>
-									<p className='tag tag__tech'>Intelligent Automation</p>
-									<p className='tag tag__tech'>IoT</p>
-									<p className='tag tag__tech'>Hardware</p>
-									<p className='tag tag__tech'>Payments and Transactions</p>
-								</div>
-							</div>
-							<Button className='pitches-card__btn'>Подробней о стартапе &gt;</Button>
-						</CardBody>
-					</Card>
-				</div> */
-}

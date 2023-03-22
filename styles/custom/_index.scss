@@ -154,6 +154,10 @@ body {
 		font-size: 30px;
 		line-height: 130%;
 	}
+
+	@media (max-width: 575px) {
+		line-height: 40px;
+	}
 }
 
 .withus {
@@ -1399,6 +1403,17 @@ body {
 		padding-bottom: 20px;
 	}
 
+	&__logo {
+		margin-left: -29px;
+		@media (max-width: 767px) {
+			margin-left: 0;
+			margin-top: -20px;
+		}
+		@media (max-width: 609px) {
+			margin-top: -11px;
+		}
+	}
+
 	&__nav {
 		@media (max-width: 767px) {
 			margin-left: 92px;
@@ -1489,7 +1504,7 @@ body {
 	&__btn-link {
 		margin: 34px 0;
 		@media (max-width: 767px) {
-			margin-bottom: 13px;
+			margin-bottom: 10px;
 		}
 		@media (max-width: 609px) {
 			margin-top: 20px;
@@ -1547,6 +1562,9 @@ body {
 		padding: 11px 10px;
 		width: 100%;
 		padding-bottom: 0;
+		@media (max-width: 767px) {
+			margin-bottom: -3px;
+		}
 		@media (max-width: 609px) {
 			padding-top: 12px;
 			padding-bottom: 1px;
