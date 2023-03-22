@@ -856,6 +856,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-bottom: 0;
 		@media (max-width: 998px) {
 			text-align: center;
 		}
@@ -1090,8 +1091,13 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-bottom: 0;
+		padding-top: 14px;
 		@media (max-width: 998px) {
 			text-align: center;
+		}
+		@media (max-width: 575px) {
+			padding-bottom: 10px;
 		}
 	}
 
