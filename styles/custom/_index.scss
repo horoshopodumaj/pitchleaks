@@ -1724,7 +1724,7 @@ body {
 			transition-duration: 1.6s;
 			animation-fill-mode: forwards;
 		}
-		&.activeSlide .pitches-card__body .pitches-card__btn {
+		&.activeSlide .pitches-card__body .pitches__btn-wrapper {
 			animation: fadeIn 3s;
 			transition-duration: 2s;
 			animation-fill-mode: forwards;
@@ -1940,9 +1940,6 @@ body {
 		&:hover {
 			color: $white;
 			background-color: #05050b;
-			opacity: 1;
-			animation: none !important;
-			transition-duration: 0s !important;
 		}
 	}
 

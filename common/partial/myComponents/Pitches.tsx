@@ -345,9 +345,11 @@ const Pitches: FC = (props: Props) => {
 												))}
 											</div>
 										</div>
-										<Button className='pitches-card__btn'>
-											Подробней о стартапе &gt;
-										</Button>
+										<div className='pitches__btn-wrapper'>
+											<Button className='pitches-card__btn'>
+												Подробней о стартапе &gt;
+											</Button>
+										</div>
 									</CardBody>
 								</Card>
 							</div>
