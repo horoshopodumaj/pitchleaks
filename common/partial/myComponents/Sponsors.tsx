@@ -62,36 +62,43 @@ const Sponsors: FC = (props: Props) => {
 			<div className='wrapper__titles'>
 				<h2 className='fw-semibold titles m-0'>Акселераторам</h2>
 			</div>
-			<Card className='sponsors bg-l10-info'>
+			<Card className='sponsors'>
 				<CardBody className='sponsors__body'>
 					<div className='sponsors-info d-flex'>
-						<Card className='sponsors-info__card'>
-							<CardBody className='sponsors-info__body'>
-								<img
-									className='sponsors-info__img'
-									src={SponsorsImage}
-									alt='sponsors'
-								/>
-							</CardBody>
-						</Card>
+						{/* <Card className='sponsors-info__card'>
+							<CardBody className='sponsors-info__body'> */}
+						<div className='sponsors-info__body'>
+							<img
+								className='sponsors-info__img'
+								src={SponsorsImage}
+								alt='sponsors'
+							/>
+						</div>
+
+						{/* </CardBody>
+						</Card> */}
 						<div className='sponsors-info__content'>
 							<h3 className='sponsors-info__title'>
-								Информация о преимуществах сервиса для акселераторатов
+								Управляйте программами в несколько кликов
 							</h3>
 							<p className='sponsors-info__subtitle'>
-								Информация о сервисе Питчликс доносящая суть сервиса.
+								Создать программу, пригласить экспертов и трекеров, отобрать
+								участников, разослать всем уведомления и выгрузить отчёт — звучит
+								как большой объём работы, требующий много ресурсов. <br /> Питчликс
+								помогает ускорить работу акселератора, автоматизируя множество
+								рутинных операций.
 							</p>
 							<div className='sponsors-info__btns'>
 								<Button className='sponsors-info__btn sponsors-info__btn-auth'>
-									Зарегистрироваться
+									Записаться на демо
 								</Button>
-								<Button className='sponsors-info__btn sponsors-info__btn-demo'>
+								{/* <Button className='sponsors-info__btn sponsors-info__btn-demo'>
 									Запрос демо
-								</Button>
+								</Button> */}
 							</div>
 						</div>
 					</div>
-					<div className='sponsors-carousel'>
+					{/* <div className='sponsors-carousel'>
 						<h3 className='sponsors-carousel__maintitle'>
 							Акселераторы использующие платформу
 						</h3>
@@ -106,7 +113,7 @@ const Sponsors: FC = (props: Props) => {
 										</CarouselSlide>
 								  ))}
 						</Carousel>
-					</div>
+					</div> */}
 				</CardBody>
 			</Card>
 		</section>

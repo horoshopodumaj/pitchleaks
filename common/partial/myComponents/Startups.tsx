@@ -13,14 +13,18 @@ const Startups: FC = (props: Props) => {
 			<Card className='startups bg-l10-success'>
 				<CardBody className='startups__body d-flex'>
 					<div className='startups__content'>
-						<h3 className='startups__title'>
-							Информация о преимуществах
-							<br /> сервиса для стартапов
-						</h3>
+						<h3 className='startups__title'>Найдите инвестора за 5 минут</h3>
 						<p className='startups__subtitle mb-4'>
-							Информация о сервисе Питчликс доносящая суть сервиса.
+							Расскажите всем о вашем стартапе с помощью видео-питча — ролика
+							позволяющего просто и быстро передать основную идею проекта. <br /> Пока
+							мы настраиваем сайт, это можно сделать в нашем Telegram-канале.
 						</p>
-						<Button className='startups__btn '>Зарегистрироваться</Button>
+						<div className='startups__buttons d-flex'>
+							<Button className='startups__btn '>Отправить видео-питч</Button>
+							<Button className='startups__btn startups__btn--two '>
+								Посетить группу{' '}
+							</Button>
+						</div>
 					</div>
 
 					<div className='startups__img'></div>

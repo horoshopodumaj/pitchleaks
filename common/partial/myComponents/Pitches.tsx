@@ -249,7 +249,7 @@ const Pitches: FC = (props: Props) => {
 	return (
 		<section id='pitches' className='pitches scroll-margin'>
 			<div className='wrapper__titles'>
-				<h2 className='fw-semibold titles m-0'>Питчи недели</h2>
+				<h2 className='fw-semibold titles m-0'>Лучшие питчи</h2>
 			</div>
 			<div className='pitches__container'>
 				{pitches.map((pitch: PitchesType, pitchIndex: number) => {
@@ -306,7 +306,7 @@ const Pitches: FC = (props: Props) => {
 										</div>
 									</CardBody>
 								</Card>
-								<Button className='pitches__btn'>Посмотреть все питчи</Button>
+								{/* <Button className='pitches__btn'>Посмотреть все питчи</Button> */}
 							</div>
 							<div className={`pitches__info ${position}`}>
 								<Card className='pitches-card'>
@@ -345,11 +345,11 @@ const Pitches: FC = (props: Props) => {
 												))}
 											</div>
 										</div>
-										<div className='pitches__btn-wrapper'>
+										{/* <div className='pitches__btn-wrapper'>
 											<Button className='pitches-card__btn'>
 												Подробней о стартапе &gt;
 											</Button>
-										</div>
+										</div> */}
 									</CardBody>
 								</Card>
 							</div>

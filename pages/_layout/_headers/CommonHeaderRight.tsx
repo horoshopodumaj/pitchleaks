@@ -91,13 +91,22 @@ const CommonHeaderRight: FC<ICommonHeaderRightProps> = ({ beforeChildren, afterC
 							О проекте
 						</Button>
 					</li>
-					<li className='full-header__item'>
+					{/* <li className='full-header__item'>
 						<Button
 							className='full-header__link'
 							tag='a'
 							to='#pitches'
 							isActive={activeElementId === 'pitches'}>
 							Питчи
+						</Button>
+					</li> */}
+					<li className='full-header__item'>
+						<Button
+							className='full-header__link'
+							tag='a'
+							to='#participants'
+							isActive={activeElementId === 'participants'}>
+							Стартапам
 						</Button>
 					</li>
 					<li className='full-header__item'>
@@ -106,7 +115,16 @@ const CommonHeaderRight: FC<ICommonHeaderRightProps> = ({ beforeChildren, afterC
 							tag='a'
 							to='#participants'
 							isActive={activeElementId === 'participants'}>
-							Участники
+							Инвесторам
+						</Button>
+					</li>
+					<li className='full-header__item'>
+						<Button
+							className='full-header__link'
+							tag='a'
+							to='#participants'
+							isActive={activeElementId === 'participants'}>
+							Акселераторам
 						</Button>
 					</li>
 					<li className='full-header__item'>
@@ -120,9 +138,9 @@ const CommonHeaderRight: FC<ICommonHeaderRightProps> = ({ beforeChildren, afterC
 					</li>
 				</ul>
 			</nav>
-			<Link className='full-header__btn-link' href='#'>
+			{/* <Link className='full-header__btn-link' href='#' >
 				<Button className='full-header__btn bg-l10-info'>Войти</Button>
-			</Link>
+			</Link> */}
 		</HeaderRight>
 	);
 };

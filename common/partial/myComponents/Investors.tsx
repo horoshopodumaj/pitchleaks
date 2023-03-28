@@ -47,36 +47,42 @@ const Investors = (props: Props) => {
 			<div className='wrapper__titles'>
 				<h2 className='fw-semibold titles m-0'>Инвесторам и корпорациям</h2>
 			</div>
-			<Card className='investors bg-l10-danger'>
+			<Card className='investors'>
 				<CardBody className='investors__body'>
 					<div className='investors-info d-flex'>
-						<Card className='investors-info__card'>
-							<CardBody className='investors-info__body'>
-								<img
-									className='investors-info__img'
-									src={InvestorsImage}
-									alt='investors'
-								/>
-							</CardBody>
-						</Card>
+						{/* <Card className='investors-info__card'>
+							<CardBody className='investors-info__body'> */}
+						{/* <div className='investors-info__card'> */}
+						<div className='investors-info__body'>
+							<img
+								className='investors-info__img'
+								src={InvestorsImage}
+								alt='investors'
+							/>
+						</div>
+						{/* </div> */}
+
+						{/* </CardBody>
+						</Card> */}
 						<div className='investors-info__content'>
-							<h3 className='investors-info__title'>
-								Информация о преимуществах сервиса для инвесторов и корпораций
-							</h3>
+							<h3 className='investors-info__title'>Стартапы как на ладони!</h3>
 							<p className='investors-info__subtitle'>
-								Информация о сервисе Питчликс доносящая суть сервиса.
+								Знакомьтесь со стартапами с помощью привычных социальных механик —
+								коротких видео-питчей, лайков и сообщении. <br /> Делитесь находками
+								с коллегами, подключайте к оценке своих экспертов. <br /> Начните
+								знакомство уже сейчас, в нашем Telegram-канале.
 							</p>
 							<div className='investors-info__btns'>
 								<Button className='investors-info__btn investors-info__btn-auth'>
-									Зарегистрироваться
+									Найти тот самый стартап
 								</Button>
-								<Button className='investors-info__btn investors-info__btn-demo'>
+								{/* <Button className='investors-info__btn investors-info__btn-demo'>
 									Запрос демо
-								</Button>
+								</Button> */}
 							</div>
 						</div>
 					</div>
-					<div className='investors-carousel'>
+					{/* <div className='investors-carousel'>
 						<h3 className='investors-carousel__maintitle'>
 							Акселераторы использующие платформу
 						</h3>
@@ -91,7 +97,7 @@ const Investors = (props: Props) => {
 										</CarouselSlide>
 								  ))}
 						</Carousel>
-					</div>
+					</div> */}
 				</CardBody>
 			</Card>
 		</section>

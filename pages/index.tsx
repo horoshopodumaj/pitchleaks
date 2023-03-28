@@ -48,19 +48,20 @@ const Index: NextPage = () => {
 					<WithUs />
 				</div>
 				<div className='col-12 px-0'>
+					<Startups />
+				</div>
+				<div className='col-12 px-0'>
 					<Pitches />
 				</div>
 				<section id='participants' className='scroll-margin p-0 m-0'>
 					<div className='col-12 px-0'>
-						<Startups />
-					</div>
-					<div className='col-12 px-0'>
-						<Sponsors />
+						<Investors />
 					</div>
 				</section>
 				<div className='col-12 px-0'>
-					<Investors />
+					<Sponsors />
 				</div>
+
 				<div className='col-12 px-0 '>
 					<Info />
 				</div>

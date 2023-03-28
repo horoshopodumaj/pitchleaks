@@ -146,11 +146,11 @@ const Header: FC<IHeaderProps> = ({ children, hasLeftMobileMenu, hasRightMobileM
 									/>
 								</Link>
 							</div>
-							<Link href='#'>
+							{/* <Link href='#'>
 								<Button className='full-header__btn header-mobile__button bg-l10-info'>
 									Войти
 								</Button>
-							</Link>
+							</Link> */}
 						</div>
 					</div>
 				</div>

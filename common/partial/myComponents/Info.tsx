@@ -11,12 +11,16 @@ const Info = (props: Props) => {
 				<CardBody className='auth__body'>
 					<div className='auth__img'></div>
 					<div className='auth__content'>
-						<h3 className='auth__title'>
-							Больше возможностей
-							<br />
-							после регистрации
-						</h3>
-						<Button className='auth__btn'>Зарегистрироваться</Button>
+						<h3 className='auth__title'>Попробуйте бесплатно</h3>
+						<p className='auth__subtitle'>
+							Оставьте заявку и пользуйтесь всеми преимуществами Питчликс бесплатно на
+							период бета-тестирования.
+						</p>
+						<p className='auth__subtitle'>
+							Будем сообщать вам новости о развитии сервиса, а когда всё завертится,
+							пришлём приглашение на регистрацию.
+						</p>
+						<Button className='auth__btn'>Оставить заявку</Button>
 					</div>
 				</CardBody>
 			</Card>
@@ -24,15 +28,19 @@ const Info = (props: Props) => {
 				<CardBody className='contacts__body'>
 					<div className='contacts__img'></div>
 					<div className='contacts__content'>
-						<h3 className='contacts__title'>Блок с контактной информацией</h3>
+						<h3 className='contacts__title'>Присоединяйтесь к сообществу!</h3>
 						<p className='contacts__subtitle'>
-							Призыв к действию связаться, задать вопросы, оставить заявку уже сейчас.
+							Вступайте в нашу группу в Telegram, где регулярно публикуются новые
+							виде-питчи и новости венчурного рынка.
+						</p>
+						<p className='contacts__subtitle'>
+							Остались вопросы? Напишите нам письмо или спросите в чате поддержки.
 						</p>
 						<Button className='contacts__btn contacts__btn-mail'>
-							Написать письмо
+							Перейти в Telegram
 						</Button>
 						<Button className='contacts__btn contacts__btn-telegram'>
-							Задать вопрос в Telegram
+							Написать письмо
 						</Button>
 					</div>
 				</CardBody>
